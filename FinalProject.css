@@ -1,0 +1,184 @@
+body{
+  background-color: rgb(255,255,245);
+}
+/*------------------------ Site header --------------------------*/
+div.top-div {
+  height: 110px;
+  background-image: url("http://pre09.deviantart.net/ec34/th/pre/i/2010/230/a/0/germany_grunge_flag_by_think0.jpg");
+  background-size: 100% 100%;
+  /*border-style: solid;
+  border-color: black;*/
+  border-width: thin;
+}
+div.heading {
+  height: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: white;
+  opacity: 0.5;*/
+}
+div.top-div h1 {
+  text-align: center;
+  margin-top: auto;
+  font-size: 50pt;
+  font-weight: bold;
+  font-family: 'Great Vibes', calibri, helvetica, sans-serif;
+  line-height: 1.8;
+  color: white;
+  text-shadow: 2px 2px brown;
+}
+div.top-div span{
+  font-size: 25pt;
+}
+/*#flag {
+  position: relative;
+  max-height:100%;
+  width: 100%;
+  opacity: 0.9;
+}*/
+/*------------------------ Navigation bar -----------------------*/
+nav.nav-menu {
+  float: left;
+  width: 220px;
+  height: 1000px;
+  border-right: solid;
+  border-right-width: thick;
+  border-color: rgb(230,155,0);
+  background-color: rgb(88,88,88);
+}
+div.nav-tab {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+  width: 90%;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 7px 7px 7px 7px;
+  background-color: darkred;
+  border-style: ridge;
+  border-color: rgb(230,155,0);
+}
+div.nav-tab:hover {
+  background-color: black;
+  text-decoration: none;
+}
+div.nav-tab-sub {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 50%;
+  height: 25px;
+  box-sizing: border-box;
+  border-radius: 5px 5px 5px 5px;
+  background-color: darkred;
+  border-style: ridge;
+  border-color: rgb(230,155,0);
+}
+div.nav-tab-sub:hover {
+  background-color: black;
+  text-decoration: none;
+}
+a.navigation {
+  text-decoration: none;
+  font-size: large;
+  color: white;
+  font-family: calibri, helvetica, sans-serif;
+  margin-left: 10px;
+}
+a.navigation-sub {
+  text-decoration: none;
+  font-size: medium;
+  color: white;
+  font-family: calibri, helvetica, sans-serif;
+  margin-left: 10px;
+}
+
+/*------------------------ Main div -----------------------*/
+div.main-div {
+  position: absolute;
+  margin-left: 240px;
+  float: left;
+  width: 700px;
+  border-style: none;
+  background-color: none;
+  font-family: calibri, helvetica, sans-serif;
+  font-size: large;
+}
+#divAfterTest {
+  visibility: hidden;
+}
+#divAfterTest h1 {
+  color: green;
+}
+div.container {
+  width: 100%;
+  visibility: visible;
+}
+#resultMessage {
+  font-size: 300%;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 550px;
+  margin-left: 20px;
+  text-align: center;
+}
+h1 + p::first-letter {
+  font-size: 200%;
+}
+.bold {
+  font-weight: bold;
+}
+div.pic_keyword {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: left;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-style: solid;
+  border-color: darkgrey;
+  background-color: lightgrey;
+  text-align: center;
+}
+div.pic_keyword img {
+    vertical-align: middle;
+    border: 0 none;
+    max-height: 210px;
+}
+div.checkButton {
+  position: absolute;
+  margin-top: 540px;
+  margin-left: 225px;
+  clear: left;
+}
+#continueButton {
+  visibility: hidden;
+}
+#tryAgainButton {
+  visibility: hidden;
+}
+table {
+  width: 70%;
+}
+th {
+  text-indent: 4px;
+  border-style: groove;
+  background-color: lightgrey;
+}
+td {
+  text-indent: 2px;
+  border-style: groove;
+  background-color: white;
+}
+#hiddenMessage {
+  visibility: hidden;
+  text-align: center;
+  font-size: 150%;
+}
+div.Result {
+  margin-top: 50px;
+}
+div.Result span {
+  font-weight: bold;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--Author: Matthaeus Vogelmann-->
+
+<html>
+  <head>
+    <title>German 101</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="FinalProject.css">
+    <!--Courtesy of bootstrap.com -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Courtesy of fonts.google.com -->
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="FinalProject.js"></script>
+  </head>
+
+  <body onload="BuildVocabulary()">
+    <div class="top-div">
+      <div class="heading">
+        <h1>
+          German Course <span>for</span> Beginners
+        </h1>
+      </div>
+    </div>
+    <nav class="nav-menu">
+      <div class="nav-tab">
+        <a class="navigation" href="index.html">Home</a>
+      </div>
+      <div class="nav-tab">
+        <a class="navigation" href="Course_main.html">German Course</a>
+      </div>
+      <div class="nav-tab-sub">
+        <a class="navigation-sub" href="Course1.html">Level 1</a>
+      </div>
+      <div class="nav-tab-sub">
+        <a class="navigation-sub" href="">Level 2</a>
+      </div>
+      <div class="nav-tab-sub">
+        <a class="navigation-sub" href="">Level 3</a>
+      </div>
+      <div class="nav-tab">
+        <a class="navigation" href="Vocabular.html">&#9655; Vocabular Trainer</a>
+      </div>
+    </nav>
+
+    <div class="main-div" id="divBeforeTest">
+      <h1>Welcome to the Vocabular Trainer!</h1>
+      <p>
+        In the German Course levels 1 to 3 you have already learned 12
+        german words. But as our brains are not perfect, you should repeat them
+        regularly.<br><br>
+      </p>
+      <table>
+        <tr>
+          <th>German word</th>
+          <th>Your English translation</th>
+        </tr>
+        <tr>
+          <td id="GermanVocable"></td>
+          <td>
+            <div class="input-group">
+              <input type="text" class="form-control" id="Translation" placeholder="Your translation...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" onclick="checkAnswerVoc()">Check!</button>
+              </span>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div id="hiddenMessage">
+      </div>
+      <div class="Result">
+        <p>
+          You translated
+          <span id="totalCorrect">0</span>
+          of
+          <span id="totalVocables">0</span>
+          vocables correctly. <br><br><br><br><br>
+          Hint: open console...
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

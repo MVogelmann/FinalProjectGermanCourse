@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--Author: Matthaeus Vogelmann-->
+
+<html>
+  <head>
+    <title>German 101 - Level 3</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="FinalProject.css">
+    <!--Courtesy of bootstrap.com -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Courtesy of fonts.google.com -->
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="FinalProject.js"></script>
+  </head>
+
+  <body onload="BuildCourse3(0)">
+    <div class="top-div">
+      <div class="heading">
+        <h1>
+          German Course <span>for</span> Beginners
+        </h1>
+      </div>
+    </div>
+    <nav class="nav-menu">
+      <div class="nav-tab">
+        <a class="navigation" href="index.html">Home</a>
+      </div>
+      <div class="nav-tab">
+        <a class="navigation" href="Course_main.html">&#9655; German Course</a>
+      </div>
+      <div class="nav-tab-sub">
+        <a class="navigation-sub" href="Course1.html">Level 1</a>
+      </div>
+      <div class="nav-tab-sub">
+        <a class="navigation-sub" href="Course2.html">Level 2</a>
+      </div>
+      <div class="nav-tab-sub">
+        <a class="navigation-sub" href="Course3.html">&#9655; Level 3</a>
+      </div>
+      <div class="nav-tab">
+        <a class="navigation" href="Vocabular.html">Vocabular Trainer</a>
+      </div>
+    </nav>
+
+    <div class="main-div">
+      <h1>Level 3</h1>
+      <span id="resultMessage"></span>
+      <div id="container">
+        <p>
+          Which of these is <span id="keyword1_1"></span>?
+        </p>
+        <div class="pic_keyword">
+          <!--Picture: Courtesy of pixabay.com -->
+          <img id="pic_0"
+            src=""
+            alt="Woman portrait">
+          <div class="radio">
+            <label>
+              <input type="radio" id="radio_0" name="answer">
+              <span id="description_0"></span>
+            </label>
+          </div>
+        </div>
+        <div class="pic_keyword">
+          <!--Picture: Courtesy of pixabay.com -->
+          <img id="pic_1"
+            src=""
+            alt="Woman portrait">
+          <div class="radio">
+            <label>
+              <input type="radio" id="radio_1" name="answer">
+              <span id="description_1"></span>
+            </label>
+          </div>
+        </div>
+        <div class="pic_keyword">
+          <!--Picture: Courtesy of pixabay.com -->
+          <img id="pic_2"
+            src=""
+            alt="Woman portrait">
+          <div class="radio">
+            <label>
+              <input type="radio" id="radio_2" name="answer">
+              <span id="description_2"></span>
+            </label>
+          </div>
+        </div>
+        <div class="pic_keyword">
+          <!--Picture: Courtesy of pixabay.com -->
+          <img id="pic_3"
+            src=""
+            alt="Woman portrait">
+          <div class="radio">
+            <label>
+              <input type="radio" id="radio_3" name="answer">
+              <span id="description_3"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="checkButton" id="checkAnswerButton">
+        <button type="button" class="btn btn-primary" onclick="checkAnswer(3)">
+          Check Answer
+        </button>
+      </div>
+      <div class="checkButton" id="continueButton">
+        <button type="button" class="btn btn-primary" onclick="Continue('_main')">
+          Continue
+        </button>
+      </div>
+      <div class="checkButton" id="tryAgainButton">
+        <button type="button" class="btn btn-primary" onclick="TryAgain(3)">
+          Try again
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
